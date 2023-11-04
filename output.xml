@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on linux)" generated="20231103 23:53:39.536" rpa="false" schemaversion="4">
+<suite id="s1" name="Cadastro Sem Email Teste" source="/home/thalita-fortes/Downloads/Desafio/Desafio03/cadastro_sem_email_teste.robot">
+<test id="s1-t1" name="Caso de Teste 2 – Tentar fazer um cadastro sem um campo obrigatório" line="9">
+<kw name="Abrir o navegador" library="cadastro_sem_email_teste_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231103 23:53:39.897" level="INFO">Opening browser 'Chrome' to base url 'https://phptravels.com/demo/'.</msg>
+<status status="PASS" starttime="20231103 23:53:39.896" endtime="20231103 23:53:44.646"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231103 23:53:44.646" endtime="20231103 23:53:44.777"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:39.896" endtime="20231103 23:53:44.777"/>
+</kw>
+<kw name=" Acessar a home page do site https://phptravels.com/demo/" library="cadastro_sem_email_teste_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231103 23:53:44.778" level="INFO">Opening url 'https://phptravels.com/demo/'</msg>
+<status status="PASS" starttime="20231103 23:53:44.778" endtime="20231103 23:53:45.415"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${logo_site}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231103 23:53:45.415" endtime="20231103 23:53:45.453"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:44.777" endtime="20231103 23:53:45.453"/>
+</kw>
+<kw name="Visualizar o titulo do formulario &quot;Book Your Free Demo Now - Phptravels&quot;" library="cadastro_sem_email_teste_resources" sourcename="Visualizar o titulo do formulario &quot;${Titulo_form}&quot;">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=${Titulo_form}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20231103 23:53:45.460" level="INFO">Page title is 'Book Your Free Demo Now - Phptravels'.</msg>
+<status status="PASS" starttime="20231103 23:53:45.453" endtime="20231103 23:53:45.460"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:45.453" endtime="20231103 23:53:45.460"/>
+</kw>
+<kw name=" Preecher os campos solicitados e deixar apenas o campo email sem preenchimento" library="cadastro_sem_email_teste_resources">
+<kw name="First Name" library="FakerLibrary">
+<var>${nome}</var>
+<msg timestamp="20231103 23:53:45.461" level="INFO">${nome} = Kristina</msg>
+<status status="PASS" starttime="20231103 23:53:45.461" endtime="20231103 23:53:45.461"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${First_name}</arg>
+<arg>${nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:45.461" level="INFO">Typing text 'Kristina' into text field '//input[contains(@name,'first_name')]'.</msg>
+<status status="PASS" starttime="20231103 23:53:45.461" endtime="20231103 23:53:45.558"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${sobrenome}</var>
+<msg timestamp="20231103 23:53:45.559" level="INFO">${sobrenome} = Moran</msg>
+<status status="PASS" starttime="20231103 23:53:45.558" endtime="20231103 23:53:45.559"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Last_name}</arg>
+<arg>${sobrenome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:45.559" level="INFO">Typing text 'Moran' into text field '//input[contains(@name,'last_name')]'.</msg>
+<status status="PASS" starttime="20231103 23:53:45.559" endtime="20231103 23:53:45.629"/>
+</kw>
+<kw name="Job" library="FakerLibrary">
+<var>${Empresa}</var>
+<msg timestamp="20231103 23:53:45.629" level="INFO">${Empresa} = Gaffer</msg>
+<status status="PASS" starttime="20231103 23:53:45.629" endtime="20231103 23:53:45.629"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Business_name}</arg>
+<arg>${Empresa}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:45.630" level="INFO">Typing text 'Gaffer' into text field '//input[contains(@name,'business_name')]'.</msg>
+<status status="PASS" starttime="20231103 23:53:45.630" endtime="20231103 23:53:45.700"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231103 23:53:49.700" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231103 23:53:45.700" endtime="20231103 23:53:49.700"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:45.460" endtime="20231103 23:53:49.701"/>
+</kw>
+<kw name="Realizar o calculo da soma e preencher no campo Resulto" library="cadastro_sem_email_teste_resources">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${numb1}</var>
+<arg>id:numb1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:49.733" level="INFO">${numb1} = 7</msg>
+<status status="PASS" starttime="20231103 23:53:49.702" endtime="20231103 23:53:49.733"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${numb2}</var>
+<arg>id:numb2</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:49.750" level="INFO">${numb2} = 2</msg>
+<status status="PASS" starttime="20231103 23:53:49.733" endtime="20231103 23:53:49.750"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${result}</var>
+<arg>${numb1} + ${numb2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231103 23:53:49.750" level="INFO">${result} = 9</msg>
+<status status="PASS" starttime="20231103 23:53:49.750" endtime="20231103 23:53:49.750"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:number</arg>
+<arg>${result}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:49.751" level="INFO">Typing text '9' into text field 'id:number'.</msg>
+<status status="PASS" starttime="20231103 23:53:49.750" endtime="20231103 23:53:49.811"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231103 23:53:53.812" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231103 23:53:49.811" endtime="20231103 23:53:53.812"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:49.701" endtime="20231103 23:53:53.813"/>
+</kw>
+<kw name="Clicando no botão Submit" library="cadastro_sem_email_teste_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231103 23:53:53.817" level="INFO">Clicking element '//button[contains(.,'Submit')]'.</msg>
+<status status="PASS" starttime="20231103 23:53:53.815" endtime="20231103 23:53:53.909"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231103 23:53:56.909" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231103 23:53:53.909" endtime="20231103 23:53:56.910"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:53.813" endtime="20231103 23:53:56.910"/>
+</kw>
+<kw name="Visualizando a mensagem de obrigatoriedade do campo não preenchido" library="cadastro_sem_email_teste_resources">
+<kw name="Handle Alert" library="SeleniumLibrary">
+<var>${alert_text}</var>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20231103 23:53:56.913" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg timestamp="20231103 23:53:56.970" level="INFO">${alert_text} = Please type your email name</msg>
+<status status="PASS" starttime="20231103 23:53:56.912" endtime="20231103 23:53:56.970"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${alert_text}</arg>
+<arg>Please type your email name</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231103 23:53:56.970" endtime="20231103 23:53:56.970"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${alert_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231103 23:53:56.971" endtime="20231103 23:53:56.971"/>
+</kw>
+<status status="PASS" starttime="20231103 23:53:56.911" endtime="20231103 23:53:56.971"/>
+</kw>
+<doc>Essa suite realiza o cadastro de um usuário novo usuário no site 'https://phptravels.com/demo/'</doc>
+<tag>cadastro</tag>
+<status status="PASS" starttime="20231103 23:53:39.895" endtime="20231103 23:53:56.971"/>
+</test>
+<doc>Essa suite de teste realiza o cadastro de um novo usuário no site
+'https://phptravels.com/demo/'</doc>
+<status status="PASS" starttime="20231103 23:53:39.536" endtime="20231103 23:53:56.972"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">cadastro</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cadastro Sem Email Teste">Cadastro Sem Email Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
