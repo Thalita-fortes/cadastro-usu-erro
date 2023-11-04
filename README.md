@@ -7,7 +7,7 @@ Caso de Teste 2 – Tentar fazer um cadastro sem um campo obrigatório
     Então o sistema deve apresentar a tela com a mensagem de obrigatoriedade do campo não preenchido <br/>
 
 
-<h1> Instruções para execução do script de teste <h1/>
+<h1> Instruções para execução do script de teste </h1>
 
 OBS: Certifique-se de que você possui o Robot Framework e a biblioteca SeleniumLibrary instalados em seu ambiente de desenvolvimento. Se ainda não os tiver instalado, você pode usar o pip para instalá-los: <br/>
 
