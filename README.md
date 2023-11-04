@@ -11,14 +11,14 @@ Caso de Teste 2 – Tentar fazer um cadastro sem um campo obrigatório
 
 OBS: Certifique-se de que você possui o Robot Framework e a biblioteca SeleniumLibrary instalados em seu ambiente de desenvolvimento. Se ainda não os tiver instalado, você pode usar o pip para instalá-los: <br/>
 
-pip install robotframework <br/>
-pip install robotframework-seleniumlibrary <br/>
+    pip install robotframework <br/>
+    pip install robotframework-seleniumlibrary <br/>
 
 Certifique-se de ter o driver do navegador Chrome adequado instalado e configurado no seu sistema. Você pode baixar o ChromeDriver em https://sites.google.com/a/chromium.org/chromedriver/downloads. <br/>
 
 Execute o teste usando o comando a seguir: <br/>
 
-robot cadastro_sem_email_teste.robot <br/>
+    robot cadastro_sem_email_teste.robot <br/>
 
 O Robot Framework executará o script de teste, abrirá o navegador, preencherá os campos, realizará a soma, clicará no botão "Submit" e verificará se a mensagem de obrigatoriedade do campo não preenchido é exibida corretamente. <br/>
 
