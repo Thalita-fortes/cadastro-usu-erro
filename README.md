@@ -25,6 +25,6 @@ O Robot Framework executará o script de teste, abrirá o navegador, preencherá
 
 Certifique-se de que o ChromeDriver está configurado corretamente, e a versão do Chrome que você está usando é compatível com o ChromeDriver. Certifique-se também de ter as bibliotecas necessárias instaladas. Se houver erros durante a execução, você pode depurar o script com mensagens de log e ferramentas de depuração do Robot Framework. <br/>
 
-Criado por Thalita Fortes
-LinkedIn:https://www.linkedin.com/in/thalita-fortes/
+Criado por Thalita Fortes <br/>
+LinkedIn: https://www.linkedin.com/in/thalita-fortes/
 
