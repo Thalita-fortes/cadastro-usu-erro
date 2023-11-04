@@ -34,13 +34,13 @@ OBS: Certifique-se de que o ChromeDriver está configurado corretamente, e a ver
 
 Site utilizado para automação: https://phptravels.com/demo/
 
-<img src="https://github.com/Thalita-fortes/cadastro-usu-erro/assets/78827775/94701707-0cd0-4327-b0b8-a90ad83fdff6" width="550"><br/>
+<img src="https://github.com/Thalita-fortes/cadastro-usu-erro/assets/78827775/94701707-0cd0-4327-b0b8-a90ad83fdff6" width="650"><br/>
 
 Testes executados com sucesso + Visualizando o log 🤖:
 
-<img src="https://github.com/Thalita-fortes/cadastro-usu-erro/assets/78827775/87e892f6-81c8-4b2c-8ea6-80423a7f849c" width="550"><br/>
+<img src="https://github.com/Thalita-fortes/cadastro-usu-erro/assets/78827775/87e892f6-81c8-4b2c-8ea6-80423a7f849c" width="650"><br/>
 
- <img src="https://github.com/Thalita-fortes/cadastro-usu-erro/assets/78827775/1aa7f8e6-0663-40fe-b081-e1fa298a4042" width="550"><br/>
+ <img src="https://github.com/Thalita-fortes/cadastro-usu-erro/assets/78827775/1aa7f8e6-0663-40fe-b081-e1fa298a4042" width="650"><br/>
 
 
 Criado por Thalita Fortes <br/>
